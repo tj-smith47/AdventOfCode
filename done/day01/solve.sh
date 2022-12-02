@@ -7,7 +7,7 @@ sed -e 's/^$/asdf/g' inputs > input
 
 while read line; do
     case $line in
-        "asdf" | asdf | $test)
+        "asdf" | asdf)
             echo $sum >> sums && sum=0
             ;;
         *)
